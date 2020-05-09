@@ -1,4 +1,4 @@
-package ru.job4j.calculatro;
+package ru.job4j.calculator;
 
 public class Calculator2 {
     public static void plus(int first, int second) { // арифметический метод

@@ -1,4 +1,4 @@
-package ru.job4j.calculatro;
+package ru.job4j.calculator;
 
 /**
  * @version 1 Калькулятор идеального веса
