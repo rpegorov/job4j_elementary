@@ -1,9 +1,9 @@
 package ru.job4j.calculatro;
 
 /**
- * by rpegorov
- * v0.1 "Калькулятор идеального веса"
- * 09.05.2020
+ * @version 1 Калькулятор идеального веса
+ * @author rpegorov
+ * @since  09.05.2020
  */
 public class Fit {
     public static double manWeight(double height) {
