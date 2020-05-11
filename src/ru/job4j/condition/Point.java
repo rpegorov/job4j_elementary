@@ -10,12 +10,10 @@ package ru.job4j.condition;
 public class Point {
 
     /**
-     *
      * @param x1, x2 и тд -  наши координаты в системе
-     * @return - берет результат из вычисления distance и применяем к нему Math.sqrt
-     * Math.pow - возведение в степень (Math.pow(int x, 2) -возведение числа икс в степень 2
-     * Math.sqrt - квадратыный корень из числа
-     * return берет результат из double distance и достает из него квадратный корень
+     * @Math.pow - возведение в степень (Math.pow(int x, 2) -возведение числа икс в степень 2
+     * @Math.sqrt - квадратыный корень из числа
+     * @return берет результат из double distance и достает из него квадратный корень
      */
     public static double distance(int x1, int y1, int x2, int y2) {
         double distance = Math.pow((x2 - x1),2) + Math.pow((y2 - y1),2);
