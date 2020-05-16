@@ -22,7 +22,7 @@ public class ConverterTest {
     }
 
     @Test
-    public void whenConvert180RblThen3Dlr() {
+    public void whenConvert200RblThen3Dlr() {
         int in = 200;
         int expected = 3;
         int out = Converter.rubleToDollar(in);
