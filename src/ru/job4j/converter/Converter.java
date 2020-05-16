@@ -16,5 +16,23 @@ public class Converter {
         int dollar = Converter.rubleToDollar(200);
         System.out.println("140 rubles are " + euro + " euro.");
         System.out.println("200 rubles are " + dollar + " dollar.");
+
+/*
+Тестирование
+названия переменных корявые, я делал как то по другому, пока не могу вспомнить как
+вроде через мавен...
+Для Сережи - эти комменты я пишу для себя, мне пока так удобней, иди в **пу ;)
+ */
+        int inRub1 = 140; // вводные данные (сколько рублей)
+        int expected1 = 2; // ожидаемое значение (сколько получим евро)
+        int out1 = rubleToEuro(inRub1); // результат работы программы
+        boolean passedEuro = expected1 == out1; // результат сравнения переменных expected & out
+        System.out.println("140 rubles are 2 euro. Test result : " + passedEuro);
+
+        int inRub2 = 200;
+        int expected2 = 3;
+        int out2 = rubleToDollar(inRub2);
+        boolean passedDollar = expected2 == out2;
+        System.out.println("200 rubles are 3 dollar. Test result : " + passedDollar);
     }
 }
