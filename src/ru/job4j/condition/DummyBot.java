@@ -7,7 +7,7 @@ package ru.job4j.condition;
  * @since 23.05.2020
  */
 public class DummyBot {
-    public static void answer(String question) {
+    public static String answer(String question) {
 
         // ответы бота
         String botHello = "Привет, умник.";
@@ -16,16 +16,17 @@ public class DummyBot {
 
         // условия
         if ("Привет, Бот.".equals(question)) {  // если пришем "Привет, Бот.", то
-            System.out.println(botHello);  // получаем ответ из строки botHello
+            return botHello;  // получаем ответ из строки botHello
         } else if ("Пока.".equals(question)) {  // если пишем "Пока."
-            System.out.println(botBye);  // получаем ответ из строки botBye
+            return botBye;  // получаем ответ из строки botBye
         } else {  // если бот не знает данного вопроса
-            System.out.println(botUnknown);
+            return botUnknown;
         }
     }
 
     public static void main(String[] args) {
-        DummyBot.answer("Привет, Бот.");  // вопрос боту
+        String qst = DummyBot.answer("Привет, Бот."); // вопрос боту
+        System.out.println(qst);
     }
 
 }
