@@ -12,13 +12,13 @@ public class Counter {
     public static int sumByEven(int start, int finish) {
         int sum = 0;
         for (int j = start; j <= finish; j++) {
-            if (j % 2 == 0) {  // проверка на четность, если нет, то j=0
+            if (j % 2 == 0) {  // проверка на уловие, что j делится на 2 без остатка
                 sum = sum + j;
             }
         }
         return sum;
     }
-    
+
     public static void main(String[] args) {
         System.out.println(sum(0, 5));
         System.out.println(sum(3, 8));
