@@ -5,7 +5,7 @@ public class PrimeNumber {
         int count = 0;
         for (int number = 1; number <= finish; number++) {
             if (CheckPrimeNumber.check(number)) {  // обращаемтся к методоку проверки на простое число
-                count = count + 1;  // суммируем колличество простых числес (верных тестов)
+                count = count + 1;  // суммируем колличество простых чисел (верных тестов)
             }
         }
         return count;
