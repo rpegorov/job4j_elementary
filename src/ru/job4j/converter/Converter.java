@@ -1,11 +1,28 @@
 package ru.job4j.converter;
 
+/**
+ * Class Converter для конвертации валюты
+ * @author rpegorov
+ * @since 10.06.2020
+ * @version 1
+ */
 public class Converter {
+
+    /**
+     * Конвертация рубли в евро
+     * @param value исходное кол-во валюты (рублей).
+     * @return результат конвертации value по заданному курсу 70.
+     */
     public static int rubleToEuro(int value) {
         int rsl = value / 70;
         return rsl;
     }
 
+    /**
+     * Конвертация рубли в доллары
+     * @param value исходное кол-во валюты (рублей).
+     * @return результат конвертации value по заданному курсу 70.
+     */
     public static int rubleToDollar(int value) {
         int rsl = value / 60;
         return rsl;
@@ -20,10 +37,10 @@ public class Converter {
 /*
 Тестирование
  */
-        int inRub1 = 140; // вводные данные (сколько рублей)
-        int expected1 = 2; // ожидаемое значение (сколько получим евро)
-        int out1 = rubleToEuro(inRub1); // результат работы программы
-        boolean passedEuro = expected1 == out1; // результат сравнения переменных expected & out
+        int inRub1 = 140;  // вводные данные (сколько рублей)
+        int expected1 = 2;  // ожидаемое значение (сколько получим евро)
+        int out1 = rubleToEuro(inRub1);  // результат работы программы
+        boolean passedEuro = expected1 == out1;  // результат сравнения переменных expected & out
         System.out.println("140 rubles are 2 euro. Test result : " + passedEuro);
 
         int inRub2 = 200;
