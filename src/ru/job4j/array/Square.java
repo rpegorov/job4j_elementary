@@ -11,7 +11,7 @@ public class Square {
 
     public static void main(String[] args) {
         int[] array = calculate(4);
-        for (int value : array) {  // n
+        for (int value : array) {  // int[] array = calculate(bound = 4)
             System.out.println(value);
         }
     }
