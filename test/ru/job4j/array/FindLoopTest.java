@@ -8,10 +8,19 @@ public class FindLoopTest {
 
     @Test
     public void indexOf() {
-        int value = 5;
+        int value = 14;
         int[] input = {1, 11, 3, 5, 14};
         int result = FindLoop.indexOf(input, value);
-        int expect = 3;
+        int expect = 4;
+        assertThat(result, is(expect));
+    }
+
+    @Test
+    public void indexOfErr() {
+        int value = 22;
+        int[] input = {1, 11, 3, 5, 14};
+        int result = FindLoop.indexOf(input, value);
+        int expect = 0;
         assertThat(result, is(expect));
     }
 }
