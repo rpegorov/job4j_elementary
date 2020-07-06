@@ -3,7 +3,7 @@ package ru.job4j.array;
 /**
  * Метод сортировки масива по возрастанию (Selection sort)
  * @author rpegorov
- * @since 05.07.2020
+ * @since 06.07.2020
  */
 
 public class AgoArray {
