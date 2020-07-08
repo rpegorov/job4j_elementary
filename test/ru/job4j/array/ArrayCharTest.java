@@ -10,7 +10,7 @@ public class ArrayCharTest {
     @Test
     public void startWithTrue() {
         char[] word = {'H', 'e', 'l', 'l', 'o'};
-        char[] pref = {'H', 'e'};
+        char[] pref = {'H', 'e', 'l'};
         boolean result = ArrayChar.startWith(word, pref);
         assertThat(result, is(true));
     }
