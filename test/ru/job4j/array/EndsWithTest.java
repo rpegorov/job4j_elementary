@@ -3,7 +3,7 @@ package ru.job4j.array;
 import org.junit.Test;
 
 import static org.hamcrest.Matchers.is;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
 
 public class EndsWithTest {
 
@@ -18,7 +18,7 @@ public class EndsWithTest {
     @Test
     public void endsWithFalse() {
         char[] word = {'H', 'e', 'l', 'l', 'o'};
-        char[] post = {'l', 'a'};
+        char[] post = {'h', 'o'};
         boolean result = EndsWith.endsWith(word, post);
         assertThat(result, is(false));
     }
