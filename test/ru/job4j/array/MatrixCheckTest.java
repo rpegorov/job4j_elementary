@@ -8,13 +8,34 @@ import static org.junit.Assert.assertThat;
 public class MatrixCheckTest {
 
     @Test
-    public void monoHorizontal() {
+    public void whenZerroLastChar() {
+        char[][] input = {
+                {' ', ' ', ' ', ' '},
+                {'X', 'X', 'X', ' '},
+                {' ', ' ', ' ', ' '},
+        };
+        boolean result = MatrixCheck.monoHorizontal(input, 1);
+        assertThat(result, is(false));
+    }
+    @Test
+    public void whenTrue() {
+        char[][] input = {
+                {' ', ' ', ' ', ' '},
+                {'X', 'X', 'X', 'X'},
+                {' ', ' ', ' ', ' '},
+        };
+        boolean result = MatrixCheck.monoHorizontal(input, 1);
+        assertThat(result, is(true));
+    }
+
+    @Test
+    public void whenFalse() {
         char[][] input = {
                 {' ', ' ', ' '},
                 {'X', 'X', 'X'},
                 {' ', ' ', ' '},
         };
-        boolean result = MatrixCheck.monoHorizontal(input, 1);
-        assertThat(result, is(true));
+        boolean result = MatrixCheck.monoHorizontal(input, 0);
+        assertThat(result, is(false));
     }
 }
