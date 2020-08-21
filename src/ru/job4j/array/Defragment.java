@@ -10,6 +10,7 @@ public class Defragment {
                         String tmp = array[point];
                         array[point++] = array[j];
                         array[j] = tmp;
+                        break;
                     }
                 }
             }
