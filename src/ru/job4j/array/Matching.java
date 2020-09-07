@@ -12,10 +12,8 @@ public class Matching {
             for (int i : right) {
                 if (tmp == i) {
                     System.out.print(tmp);
-                    break;
                 }
             }
         }
     }
-
 }
