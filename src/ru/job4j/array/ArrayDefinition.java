@@ -1,8 +1,7 @@
 package ru.job4j.array;
 
-/*
+/**
 Массивы
-
  */
 public class ArrayDefinition {
     public static void main(String[] args) {

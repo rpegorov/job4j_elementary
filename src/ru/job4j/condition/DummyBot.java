@@ -8,24 +8,20 @@ package ru.job4j.condition;
  */
 public class DummyBot {
     public static String answer(String question) {
-
-        // ответы бота
         String botHello = "Привет, умник.";
         String botBye = "До скорой встречи.";
         String botUnknown = "Это ставит меня в тупик. Задай другой вопрос.";
-
-        // условия
-        if ("Привет, Бот.".equals(question)) {  // если пришем "Привет, Бот.", то
-            return botHello;  // получаем ответ из строки botHello
-        } else if ("Пока.".equals(question)) {  // если пишем "Пока."
-            return botBye;  // получаем ответ из строки botBye
-        } else {  // если бот не знает данного вопроса
+        if ("Привет, Бот.".equals(question)) {
+            return botHello;
+        } else if ("Пока.".equals(question)) {
+            return botBye;
+        } else {
             return botUnknown;
         }
     }
 
     public static void main(String[] args) {
-        String qst = DummyBot.answer("Привет, Бот."); // вопрос боту
+        String qst = DummyBot.answer("Привет, Бот.");
         System.out.println(qst);
     }
 

@@ -3,7 +3,6 @@ package ru.job4j.array;
 /**
  * сравнение двух массивов и вывод одинаковых значений
  */
-
 public class Matching {
     public static void main(String[] args) {
         int[] left = new int[] {1, 2, 3, 5, 6};

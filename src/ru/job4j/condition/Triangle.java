@@ -6,5 +6,4 @@ public class Triangle {
                 && ac + bc > ab
                 && ab + bc > ac;
     }
-
 }

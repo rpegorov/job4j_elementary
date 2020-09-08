@@ -3,7 +3,7 @@ package ru.job4j.condition;
 public class StringEq {
     public static boolean check(String login) {
         String root = "root";
-        return root.equals(login);  // boolean принимает значение true\false
+        return root.equals(login);
     }
 
     public static void main(String[] args) {

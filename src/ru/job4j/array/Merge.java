@@ -23,15 +23,5 @@ public class Merge {
         return rsl;
     }
 }
-//        int tmp = 0;
-//        for (int i = 0; i < left.length; i++) {
-//            rsl[i] = left[i];
-//            tmp++;
-//        }
-//        for (int j = 0; j < right.length; j++) {
-//            rsl[tmp++] = right[j];
-//        }
-//        return rsl;
-//    }
-//}
+
 
