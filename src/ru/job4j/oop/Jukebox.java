@@ -1,5 +1,9 @@
 package ru.job4j.oop;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 public class Jukebox {
     public void music(int position) {
         String song;
