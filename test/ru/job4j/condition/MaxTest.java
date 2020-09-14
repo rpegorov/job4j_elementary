@@ -23,4 +23,10 @@ public class MaxTest {
         int result = Max.max(10, 10);
         assertThat(result, is(10));
     }
+
+    @Test
+    public void whenFourthMax() {
+        int result = Max.max(10, 20, 30, 40);
+        assertThat(result, is(40));
+    }
 }
