@@ -8,8 +8,4 @@ public class Programmer extends Engineer {
         return language;
     }
 
-    public String getPlatform() {
-        return platform;
-    }
-
 }

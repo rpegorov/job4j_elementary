@@ -8,8 +8,4 @@ public class Engineer extends Profession {
         return specialization;
     }
 
-    public int getExperience() {
-        return experience;
-    }
-
 }
