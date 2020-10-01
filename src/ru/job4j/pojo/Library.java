@@ -30,7 +30,7 @@ public class Library {
         System.out.println("\n" +
                 "Sort by name" + "\n");
         for (Book bk : books)
-            if (bk.getName() == "Clean code") {
+            if (bk.getName() == clean.getName()) {
                 System.out.println(bk.getName() + " - " + bk.getPage());
             }
     }
