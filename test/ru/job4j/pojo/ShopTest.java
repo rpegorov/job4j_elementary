@@ -31,6 +31,6 @@ public class ShopTest {
         Book books[] = new Book[1];
         books[0] = new Book("Bread", 4);
         int rsl = Shop.indexOfNull(books);
-        assertThat(rsl, is(0));
+        assertThat(rsl, is(-1));
     }
 }

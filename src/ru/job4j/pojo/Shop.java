@@ -19,10 +19,9 @@ public class Shop {
         for (int j = 0; j < books.length; j++) {
             Book book = books[j];
             if (book == null) {
-                i = j++;
-                break;
+                return i;
             }
         }
-        return i;
+        return -1;
     }
 }
