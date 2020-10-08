@@ -21,14 +21,14 @@ public class Matches {
         System.out.println(winner);
         return winner;
     }
-/** метод вывода приветствия */
+    /** метод вывода приветствия */
     private void hello() {
         System.out.println("Игра 11. " +
                 "Смысл игры в следующем. На столе лежат 11 спичек. " + "\n" +
                 "Два игрока по очереди берут от 1 до 3 спичек. Выигрывает тот, " + "\n" +
                 "кто забрал последние спички.");
     }
-/** основная логика игры */
+    /** основная логика игры */
     public void game(Scanner input) {
         boolean run = true;
         hello();
@@ -41,25 +41,15 @@ public class Matches {
                 winner();
                 run = false;
             }
-                if (select < 1 || select > 3) {
-                    System.out.println("Недопустимый ход. Укажите значение от 1 до 3... ");
-                }
-                if (select == 1) {
-                    matches = matches - select;
-                    System.out.println("Игрок убрал " + select +
-                            " спички." + "На столе осталось: " + matches);
-                } else if (select == 2) {
-                    matches = matches - select;
-                    System.out.println("Игрок убрал " + select +
-                            " спички." + "На столе осталось: " + matches);
-                } else if (select == 3) {
-                    matches = matches - select;
-                    System.out.println("Игрок убрал " + select +
-                            " спички." + "На столе осталось: " + matches);
-                }
-
-            }
+            if (select < 1 || select > 3) {
+                System.out.println("Недопустимый ход. Укажите значение от 1 до 3... ");
+            } else if (select <= 3) {
+            matches = matches - select;
+            System.out.println("Игрок убрал " + select +
+                    " спички." + "На столе осталось: " + matches);
         }
+    }
+}
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
