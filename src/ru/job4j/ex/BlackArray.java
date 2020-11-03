@@ -1,4 +1,4 @@
-package ru.job4j.array;
+package ru.job4j.ex;
 
 import java.util.Arrays;
 
